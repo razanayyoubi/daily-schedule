@@ -1,0 +1,201 @@
+
+p, ul, ol{
+    font-size: 18px;
+}
+
+body{
+    background-color: beige;
+    /*reset any default spacing added by the browser.*/
+    margin:0;
+    padding: 0;
+}
+.headerPages{
+    background-color: #ff73737a
+    }
+
+h1{
+    text-align: center;
+}
+.main_body{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.Events_Table {
+    border: 1px solid rgb(0, 0, 0);
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: #e6e6e6b2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.Events_Table td, tr, thead{
+    border: 1px solid rgb(0, 0, 0);
+
+}
+
+
+.Events_Table td:first-child {
+    padding-left: 20px;
+}
+.newYear, .christmas , .me{
+
+    width: 200px;
+    height: 200px;
+    box-shadow: 0px 10px 8px rgba(0, 0, 0, 0.5);
+}
+
+.schedule_table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+.schedule_table th, .schedule_table td, .schedule_table tr {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+
+.schedule_table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.schedule_table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.schedule_table a {
+    text-decoration: none;
+    color: #A52A2A;
+    font-weight: bold;
+}
+
+.schedule_table a:hover {
+    color: #6a11cb;
+}
+
+.schedule_table thead{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    background-color: #ff73737a;
+}
+
+button {
+    width: 130px;
+    height: 40px;
+    background-color: #ff73737a;
+    color: rgb(50,50,50);
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.Sch_Homepage_button{
+    width: 130px;
+    height: 40px;
+
+}
+
+.schedule_button{
+    font-size: 20px;
+    width: 170px;
+    height: 45px; 
+    color: rgb(50,50,50);
+    
+}
+
+button:hover{
+    background-color: #da9595c4;
+}
+
+.specialEvents_button{
+    font-size: 20px;
+    width: 170px;
+    height: 45px; 
+    border-color: rgb(128,128,128); 
+}
+
+.specialEvents_button:hover{
+    background-color: #c9c7c7da;
+}
+.schedule_button:hover{
+    background-color: #c9c7c78c;
+}
+
+
+footer {
+    background-color: #ff73737a;
+    color: rgb(0, 0, 0); 
+    text-align: center; 
+    padding: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-top: 3px solid #ff73737a;
+    margin-top: 20px; 
+    margin-bottom: 0;
+}
+
+
+footer p {
+    margin: 10px;
+    font-size: 18px; 
+    
+}
+
+footer a {
+    text-decoration: none; 
+    color: #A52A2A; 
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+   
+}
+.homepageFooter{
+    margin-bottom: 0%;
+}
+
+footer a:hover {
+    color: #6a11cb; 
+}
+
+.resourceLink, .RecipeLink{
+    text-decoration: none;
+    font-size: 18px;
+    color: #A52A2A;
+
+}
+
+.RecipeLink:hover{
+    color: #6a11cb;
+}
+.resourceLink:hover{
+    color: #6a11cb;
+}
+
+/*Designing Entertainment page (pics)*/
+.Images{
+    margin-left: 5px;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.Images:hover {
+    transform: scale(1.03) translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.Centering, .Schedule_page{
+    text-align: center;
+}
+
+.centering_events{
+    text-align: center;
+}
