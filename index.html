@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Razan's Daily Schedule</title>
+    <link rel="icon" href="./Images/schedule.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+   <!-- Navbar -->
+  <nav class="bg-gray-950 shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      
+      <!-- Logo -->
+      <h1 class="text-3xl font-extrabold text-rose-400">Razan's Schedule</h1>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex space-x-6">
+        <a href="index.html" class="text-white hover:text-rose-400">Home</a>
+        <a href="Schedule.html" class="text-white hover:text-rose-400">Schedule</a>
+        <a href="Special_Events.html" class="text-white hover:text-rose-400">Events</a>
+        <a href="Assignments.html" class="text-white hover:text-rose-400">Assignments</a>
+        <a href="University_Classes.html" class="text-white hover:text-rose-400">Classes</a>
+      </div>
+
+      <!-- Burger Icon -->
+      <button id="menu-btn" class="md:hidden text-white focus:outline-none">
+        <!-- simple burger lines -->
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden px-6 pb-4 space-y-2 bg-gray-950">
+      <a href="index.html" class="block text-white hover:text-rose-400">Home</a>
+      <a href="Schedule.html" class="block text-white hover:text-rose-400">Schedule</a>
+      <a href="Special_Events.html" class="block text-white hover:text-rose-400">Events</a>
+      <a href="Assignments.html" class="block text-white hover:text-rose-400">Assignments</a>
+      <a href="University_Classes.html" class="block text-white hover:text-rose-400">Classes</a>
+    </div>
+  </nav>
+
+  <script>
+    // Simple toggle logic
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+    <!-- Hero Section -->
+    <header class="text-center py-16 px-6">
+        <h2 class="text-4xl font-bold mb-4">Welcome to My Day!</h2>
+        <p class="text-lg text-gray-300 max-w-xl mx-auto">
+            I'm Razan Al Ayoubi — a Computer Science undergraduate passionate about learning and organizing my day.
+            Let's walk through my schedule!
+        </p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+        <!-- About Me -->
+        <section class="bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-rose-500">
+            <h3 class="text-xl font-bold text-rose-400 mb-2">About Me</h3>
+            <p>A motivated university student focused on <span class="italic font-semibold">Computer Science</span>,
+                always excited to explore new opportunities.</p>
+        </section>
+
+        <!-- Schedule -->
+        <section class="bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-yellow-500">
+            <h3 class="text-xl font-bold text-yellow-400 mb-2">My Daily Schedule</h3>
+            <a href="Schedule.html">
+                <button class="mt-2 bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-full w-full">View
+                    Schedule</button>
+            </a>
+        </section>
+
+        <!-- Events -->
+        <section class="bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-purple-500">
+            <h3 class="text-xl font-bold text-purple-400 mb-2">Special Events</h3>
+            <a href="Special_Events.html">
+                <button class="mt-2 bg-purple-500 hover:bg-purple-600 text-white py-2 px-4 rounded-full w-full">View
+                    Events</button>
+            </a>
+        </section>
+
+        <!-- Quick Access -->
+        <section class="bg-gray-800 rounded-xl p-6 shadow-lg border-l-4 border-blue-500 col-span-full">
+            <h3 class="text-xl font-bold text-blue-400 mb-4">Quick Access</h3>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                <a href="Breakfast.html" class="block"><button
+                        class="bg-blue-500 hover:bg-blue-600 w-full py-2 rounded-full text-white">Breakfast</button></a>
+                <a href="Lunch_&_Break.html" class="block"><button
+                        class="bg-blue-500 hover:bg-blue-600 w-full py-2 rounded-full text-white">Lunch</button></a>
+                <a href="Assignments.html" class="block"><button
+                        class="bg-blue-500 hover:bg-blue-600 w-full py-2 rounded-full text-white">Assignments</button></a>
+                <a href="Dinner.html" class="block"><button
+                        class="bg-blue-500 hover:bg-blue-600 w-full py-2 rounded-full text-white">Dinner</button></a>
+                <a href="Entertainment.html" class="block"><button
+                        class="bg-blue-500 hover:bg-blue-600 w-full py-2 rounded-full text-white">Entertainment</button></a>
+                <a href="University_Classes.html" class="block"><button
+                        class="bg-blue-500 hover:bg-blue-600 w-full py-2 rounded-full text-white">Classes</button></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-20 border-t border-rose-500 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Connect with Me</h4>
+                <div class="flex space-x-6 text-xl">
+                    <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank"
+                        aria-label="LinkedIn" class="hover:text-purple-400 transition-colors duration-200">
+                        &#128100; LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank" aria-label="Instagram"
+                        class="hover:text-purple-400 transition-colors duration-200">
+                        &#128247; Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Get in Touch</h4>
+                <p class="text-gray-300 mb-2">Questions or comments?</p>
+                <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank"
+                    class="inline-block bg-rose-500 hover:bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg transition duration-300">
+                    Email Me
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-400 text-center md:text-right mt-6 md:mt-0">
+                <p>© 2025 Razan Al Ayoubi</p>
+                <p class="text-sm mt-1">All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

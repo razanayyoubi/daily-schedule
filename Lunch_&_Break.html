@@ -1,48 +1,85 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <title>Lunch & Break</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./Images/schedule.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lunch & Break</title>
+  <link rel="icon" href="./Images/schedule.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <main class="main_body">
-    
-        <h1 class="headerPages">Lunch and Break Time!</h1>
-    
-    <p>Lunch and break time are my moments to recharge and refocus during a busy day.</p>
-    <h3>Here you can find some of my favorite Lunch meals:</h3>
-    <ul>
+<body class="bg-gray-900 text-white font-sans">
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <section class="border border-rose-500 rounded-xl p-6">
+      <h1 class="text-3xl font-bold text-rose-400 mb-6">Lunch and Break Time!</h1>
+
+      <p class="mb-4">Lunch and break time are my moments to recharge and refocus during a busy day.</p>
+
+      <h3 class="text-xl font-semibold text-amber-300 mb-2">Here you can find some of my favorite Lunch meals:</h3>
+      <ul class="list-disc list-inside mb-6 space-y-1">
         <li>Crispy chicken with fries</li>
         <li>Four cheese pasta</li>
         <li>Cheese burger</li>
         <li>Pizza</li>
-    </ul>
-    <img src="./Images/burger.jpg" alt="Cheese burger" height="200" width="200" />
-    <img src="./Images/pizza.png" alt="Pizza" height="200" width="200" />
-    <img src="./Images/crispy.png" alt="Crispy" height="200" width="200" />
-    <p>After my lunch, I take a 30min break before continuing my daily tasks, to charge some energy!</p>
-    <p>In my break time, I usually talk to my friends, listen to music and spend some time on my phone.</p>
-    <a href='homepage.html'><button>Homepage</button></a>
-    <a href='Schedule.html'><button>Schedule</button></a>
-    <br><br>
-    </main>
-    <footer>
+      </ul>
 
-        <p><b><i>My Socials:</i></b></p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+        <img src="./Images/burger.jpg" alt="Cheese burger" class="rounded shadow-md w-full h-52 object-cover" />
+        <img src="./Images/pizza.png" alt="Pizza" class="rounded shadow-md w-full h-52 object-cover" />
+        <img src="./Images/crispy.png" alt="Crispy" class="rounded shadow-md w-full h-52 object-cover" />
+      </div>
 
-        <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank">&#x1F465; LinkedIn</a>
-        <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank">&#x1F4F7;Instagram</a>
+      <p class="mb-2">After my lunch, I take a 30min break before continuing my daily tasks, to charge some energy!</p>
+      <p class="mb-6">In my break time, I usually talk to my friends, listen to music and spend some time on my phone.</p>
 
-        <p><i><b>Any questions?</b></i></p>
-        <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank">Email me</a>
+    <nav class="flex justify-center gap-6 mt-12 mb-5">
+        <a href="index.html" class="border-2 border-rose-500 text-rose-500 font-semibold text-lg px-6 py-2 rounded-lg
+            hover:bg-rose-500 hover:text-white transition">
+            Homepage
+        </a>
+        <a href="Schedule.html" class="border-2 border-rose-500 text-rose-500 font-semibold text-lg px-6 py-2 rounded-lg
+            hover:bg-rose-500 hover:text-white transition">
+            Schedule
+        </a>
+    </nav>
+    </section>
+  </main>
 
+  <!-- Footer -->
+    <footer class="bg-gray-900 mt-5 border-t border-rose-500 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Connect with Me</h4>
+                <div class="flex space-x-6 text-xl">
+                    <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank"
+                        aria-label="LinkedIn" class="hover:text-purple-400 transition-colors duration-200">
+                        &#128100; LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank" aria-label="Instagram"
+                        class="hover:text-purple-400 transition-colors duration-200">
+                        &#128247; Instagram
+                    </a>
+                </div>
+            </div>
 
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Get in Touch</h4>
+                <p class="text-gray-300 mb-2">Questions or comments?</p>
+                <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank"
+                    class="inline-block bg-rose-500 hover:bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg transition duration-300">
+                    Email Me
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-400 text-center md:text-right mt-6 md:mt-0">
+                <p>© 2025 Razan Al Ayoubi</p>
+                <p class="text-sm mt-1">All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 

@@ -1,50 +1,96 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Breakfast</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./Images/schedule.png" type="image/x-icon">
+    <link rel="icon" href="./Images/schedule.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <main class="main_body">
-    
-        <h1 class="headerPages">Breakfast Time with Razan!</h1>
-    
-    <p>Breakfast is the most important meal of the day!
-        <br>It helps fuel your brain, improves concentration, and gives you the energy to stay productive.
-    </p>
-    <h3>Start your day with a delicious and energizing breakfast!</h3>
-    <p>My favorite breakfast meals on the menu are:</p>
-    <ul>
-        <li>Chocolate Croissant</li>
-        <li>Scrambled eggs and toast</li>
-        <li>Fresh orange juice</li>
-        <li>Shredded Mozzarella cheese sandwich</li>
-    </ul>
-    <img src="./Images/Cheese.jpg" alt="Cheese Sandwich" height="200" width="200" />
-    <img src="./Images/croissant.jpg" alt="Croissant" height="200" width="200" />
-    <img src="./Images/eggs.jpg" alt="eggs" height="200" width="200" />
-    <br><br>
-    <a href='./Homepage.html'><button>Homepage</button></a>
-    <a href='./Schedule.html'><button>Schedule</button></a>
-</main>
-    <footer>
+<body class="bg-gray-900 text-gray-200 font-sans min-h-screen flex flex-col">
 
-        <p><b><i>My Socials:</i></b></p>
+    <main class="flex-grow max-w-5xl mx-auto p-10 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Left text column -->
+        <section class="flex flex-col justify-center rounded-xl space-y-6 border border-rose-700 px-14">
+            <h1 class="text-5xl font-extrabold text-rose-500">Breakfast Time with Razan!</h1>
 
-        <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank">&#x1F465; LinkedIn</a>
-        <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank">&#x1F4F7;Instagram</a>
+            <p class="text-lg leading-relaxed max-w-md">
+                Breakfast is the most important meal of the day! It fuels your brain, improves concentration, and keeps
+                you energized.
+            </p>
 
-        <p><i><b>Any questions?</b></i></p>
-        <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank">Email me</a>
+            <h2 class="text-2xl font-semibold text-rose-400">Start your day with a delicious and energizing breakfast!
+            </h2>
+
+            <ul class="list-disc list-inside text-base max-w-sm space-y-2 text-rose-300">
+                <li>Chocolate Croissant</li>
+                <li>Scrambled Eggs and Toast</li>
+                <li>Fresh Orange Juice</li>
+                <li>Shredded Mozzarella Cheese Sandwich</li>
+            </ul>
+        </section>
+
+        <!-- Right images column -->
+        <section class="grid grid-rows-3 gap-8 pl-8">
+            <img src="./Images/Cheese.jpg" alt="Cheese Sandwich"
+                class="rounded-lg object-cover w-full h-48 shadow-md shadow-black/50" />
+            <img src="./Images/croissant.jpg" alt="Croissant"
+                class="rounded-lg object-cover w-full h-48 shadow-md shadow-black/50" />
+            <img src="./Images/eggs.jpg" alt="Eggs"
+                class="rounded-lg object-cover w-full h-48 shadow-md shadow-black/50" />
+        </section>
+    </main>
+
+    <nav class="flex justify-center gap-6 mt-12 mb-20">
+        <a href="index.html" class="border-2 border-rose-500 text-rose-500 font-semibold text-lg px-6 py-2 rounded-lg
+            hover:bg-rose-500 hover:text-white transition">
+            Homepage
+        </a>
+        <a href="Schedule.html" class="border-2 border-rose-500 text-rose-500 font-semibold text-lg px-6 py-2 rounded-lg
+            hover:bg-rose-500 hover:text-white transition">
+            Schedule
+        </a>
+    </nav>
 
 
+    <!-- Footer -->
+    <footer class="bg-gray-900  border-t border-rose-500 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Connect with Me</h4>
+                <div class="flex space-x-6 text-xl">
+                    <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank"
+                        aria-label="LinkedIn" class="hover:text-purple-400 transition-colors duration-200">
+                        &#128100; LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank" aria-label="Instagram"
+                        class="hover:text-purple-400 transition-colors duration-200">
+                        &#128247; Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Get in Touch</h4>
+                <p class="text-gray-300 mb-2">Questions or comments?</p>
+                <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank"
+                    class="inline-block bg-rose-500 hover:bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg transition duration-300">
+                    Email Me
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-400 text-center md:text-right mt-6 md:mt-0">
+                <p>© 2025 Razan Al Ayoubi</p>
+                <p class="text-sm mt-1">All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>

@@ -1,48 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Entertainment!</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./Images/schedule.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entertainment!</title>
+  <link rel="icon" href="./Images/schedule.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <main class="main_body">
-    
-        <h1 class="headerPages">Here comes to my favorite time of all the day</h1>
-    
-    <h2><i><span style="color: #CC0000;">Entertainment Time!</i></h2>
-    <P>After a long day, I specify some time at the night to rest and get some entertainment.</P>
-    <h3>My favorite activities to do are:</h3>
-    <ul>
+<body class="bg-gray-900 text-white font-sans">
+<main class="max-w-6xl mx-auto px-6 py-16 border-2 border-rose-500 rounded-xl my-10">
+    <!-- Intro Text -->
+    <section class="mb-12 max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl font-extrabold text-rose-500 mb-2">My Favorite Time of the Day</h1>
+      <h2 class="text-2xl italic text-red-600 font-semibold mb-6">Entertainment Time!</h2>
+      <p class="text-gray-300 leading-relaxed mb-6">
+        After a long day, I set aside time at night to rest and enjoy entertainment. It helps me recharge and relax.
+      </p>
+      <h3 class="text-xl font-semibold text-rose-400 mb-3">My favorite activities include:</h3>
+      <ul class="list-disc list-inside space-y-1 text-gray-300 mb-6 max-w-md mx-auto">
         <li>Watching Turkish Series</li>
         <li>Listening to music</li>
-        <li>Watching a podcast</li>
+        <li>Watching podcasts</li>
         <li>Going out with my family</li>
+      </ul>
+      <h3 class="text-xl font-semibold text-rose-400">Recommended Turkish Series:</h3>
+    </section>
 
-    </ul>
-    <h3>Here are some Turkish series I advise you to watch:</h3>
-    <img class="Images" src="./Images/series1.png" alt="Siyah Beyaz Ask" height="200" width="200" />
-    <img class="Images" src="./Images/soz.png" alt="Soz" height="200" width="200" />
-    <img class="Images" src="./Images/cukur.png" alt="Cukur" height="200" width="200" />
-    <br><br>
-    <a href='./Homepage.html'><button>Homepage</button></a>
-    <a href='./Schedule.html'><button>Schedule</button></a>
-    </main>
-    <footer>
+    <!-- Cards side by side -->
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <article
+        class="bg-gray-800 border border-rose-700 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4">
+        <img src="./Images/series1.png" alt="Siyah Beyaz Ask" class="w-40 h-40 object-cover rounded-lg mb-4" />
+        <h4 class="text-rose-400 font-bold text-xl mb-1 text-center">Siyah Beyaz Ask</h4>
+        <p class="text-gray-300 text-sm leading-snug text-center px-2">
+          A gripping drama about love and fate, exploring the depths of emotions and relationships.
+        </p>
+      </article>
 
-        <p><b><i>My Socials:</i></b></p>
+      <article
+        class="bg-gray-800 border border-rose-700 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4">
+        <img src="./Images/soz.png" alt="Soz" class="w-40 h-40 object-cover rounded-lg mb-4" />
+        <h4 class="text-rose-400 font-bold text-xl mb-1 text-center">Soz</h4>
+        <p class="text-gray-300 text-sm leading-snug text-center px-2">
+          A thrilling action series following the life of a soldier balancing duty and family.
+        </p>
+      </article>
 
-        <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank">&#x1F465; LinkedIn</a>
-        <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank">&#x1F4F7;Instagram</a>
+      <article
+        class="bg-gray-800 border border-rose-700 rounded-lg shadow-lg overflow-hidden flex flex-col items-center p-4">
+        <img src="./Images/cukur.png" alt="Cukur" class="w-40 h-40 object-cover rounded-lg mb-4" />
+        <h4 class="text-rose-400 font-bold text-xl mb-1 text-center">Cukur</h4>
+        <p class="text-gray-300 text-sm leading-snug text-center px-2">
+          A powerful story of family, loyalty, and survival in the tough neighborhoods of Istanbul.
+        </p>
+      </article>
+    </section>
 
-        <p><i><b>Any questions?</b></i></p>
-        <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank">Email me</a>
+   <nav class="flex justify-center gap-6 mt-12 mb-5">
+        <a href="index.html" class="border-2 border-rose-500 text-rose-500 font-semibold text-lg px-6 py-2 rounded-lg
+            hover:bg-rose-500 hover:text-white transition">
+            Homepage
+        </a>
+        <a href="Schedule.html" class="border-2 border-rose-500 text-rose-500 font-semibold text-lg px-6 py-2 rounded-lg
+            hover:bg-rose-500 hover:text-white transition">
+            Schedule
+        </a>
+    </nav>
+  </main>
 
+  <!-- Footer -->
+    <footer class="bg-gray-900 mt-5 border-t border-rose-500 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Connect with Me</h4>
+                <div class="flex space-x-6 text-xl">
+                    <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank"
+                        aria-label="LinkedIn" class="hover:text-purple-400 transition-colors duration-200">
+                        &#128100; LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank" aria-label="Instagram"
+                        class="hover:text-purple-400 transition-colors duration-200">
+                        &#128247; Instagram
+                    </a>
+                </div>
+            </div>
 
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Get in Touch</h4>
+                <p class="text-gray-300 mb-2">Questions or comments?</p>
+                <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank"
+                    class="inline-block bg-rose-500 hover:bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg transition duration-300">
+                    Email Me
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-400 text-center md:text-right mt-6 md:mt-0">
+                <p>© 2025 Razan Al Ayoubi</p>
+                <p class="text-sm mt-1">All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 

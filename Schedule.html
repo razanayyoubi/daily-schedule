@@ -1,97 +1,110 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <title>Schedule</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./Images/schedule.png" type="image/x-icon">
+  <title>My Daily Schedule</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="./Images/schedule.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="Schedule_page">
-    <main class="main_body">
-    
-        <h1 class="headerPages">My daily schedule</h1>
-    
-    
-        <p class="schParagraph">Organizing our time is one of the most important steps that we should take into consideration in our lives
-            due to it's several advantages, such as let us achieve our daily goals in an organized way<br>
-            <br>
-            Here comes the importance of having a daily schedule.<br>
-            For this reason, I decided to share my personal daily schedule with you, so that you can benefit from it or
-            get an inspiration!
-        </p>
-    
-    <br><br>
-    
-        <table class= "schedule_table">
-            <thead>
-                <tr>
-                    <td>
-                        <b>Time</b>
-                    </td>
-                    <td>
-                        <b>Activity</b>
-                    </td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>9:00-->10:00</td>
-                    <td>
-                        <a href='Breakfast.html'>Breakfast</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>10:00-->2:00</td>
-                    <td>
-                        <a href='University_Classes.html'>University Classes</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>2:00-->3:30</td>
-                    <td>
-                        <a href='Lunch_&_Break.html'>Lunch & Break</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>4:00-->7:30</td>
-                    <td>
-                        <a href='Assignments.html'>Study and Solve Assignments</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>7:30-->8:30</td>
-                    <td><a href='Dinner.html'>
-                            Dinner
-                        </a></td>
-                </tr>
-                <tr>
-                    <td>8:30-->10:30</td>
-                    <td>
-                        <a href='Entertainment.html'>Entertainment(movie/music..)</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
-        <a href='homepage.html'><button class="Sch_Homepage_button">Homepage</button></a>
-    
-</main>
-    <footer>
-        
-            <p><b><i>My Socials:</i></b></p>
+<body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col">
 
-            <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank">&#x1F465; LinkedIn</a>
-            <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank">&#x1F4F7;Instagram</a>
+  <main class="max-w-5xl mx-auto px-6 py-12 flex flex-col items-center">
 
-            <p><i><b>Any questions?</b></i></p>
-            <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank">Email me</a>
+    <h1 class="text-4xl font-bold text-rose-600 mb-10 tracking-tight">My Daily Schedule</h1>
 
-        
+    <p class="max-w-3xl text-center text-gray-300 mb-12 leading-relaxed px-2">
+      Organizing our time is one of the most important steps we should take into consideration in our lives, as it
+      helps achieve daily goals in an organized way.<br /><br />
+      Here’s my personal daily schedule — feel free to get inspired or benefit from it!
+    </p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-5xl">
+
+      <!-- Schedule Card -->
+      <a href="Breakfast.html"
+        class="block border border-rose-700 rounded-lg p-5 hover:bg-rose-800 transition-colors duration-200 cursor-pointer">
+        <div class="text-rose-400 font-semibold text-lg mb-1">9:00 – 10:00</div>
+        <div class="text-white text-xl font-semibold tracking-wide select-none">Breakfast</div>
+      </a>
+
+      <a href="University_Classes.html"
+        class="block border border-rose-700 rounded-lg p-5 hover:bg-rose-800 transition-colors duration-200 cursor-pointer">
+        <div class="text-rose-400 font-semibold text-lg mb-1">10:00 – 14:00</div>
+        <div class="text-white text-xl font-semibold tracking-wide select-none">University Classes</div>
+      </a>
+
+      <a href="Lunch_&_Break.html"
+        class="block border border-rose-700 rounded-lg p-5 hover:bg-rose-800 transition-colors duration-200 cursor-pointer">
+        <div class="text-rose-400 font-semibold text-lg mb-1">14:00 – 15:30</div>
+        <div class="text-white text-xl font-semibold tracking-wide select-none">Lunch &amp; Break</div>
+      </a>
+
+      <a href="Assignments.html"
+        class="block border border-rose-700 rounded-lg p-5 hover:bg-rose-800 transition-colors duration-200 cursor-pointer">
+        <div class="text-rose-400 font-semibold text-lg mb-1">16:00 – 19:30</div>
+        <div class="text-white text-xl font-semibold tracking-wide select-none">Study &amp; Solve Assignments</div>
+      </a>
+
+      <a href="Dinner.html"
+        class="block border border-rose-700 rounded-lg p-5 hover:bg-rose-800 transition-colors duration-200 cursor-pointer">
+        <div class="text-rose-400 font-semibold text-lg mb-1">19:30 – 20:30</div>
+        <div class="text-white text-xl font-semibold tracking-wide select-none">Dinner</div>
+      </a>
+
+      <a href="Entertainment.html"
+        class="block border border-rose-700 rounded-lg p-5 hover:bg-rose-800 transition-colors duration-200 cursor-pointer">
+        <div class="text-rose-400 font-semibold text-lg mb-1">20:30 – 22:30</div>
+        <div class="text-white text-xl font-semibold tracking-wide select-none">Entertainment (movie/music...)</div>
+      </a>
+
+    </div>
+
+    <a href="index.html"
+      class="mt-16 bg-rose-600 hover:bg-rose-700 text-white font-semibold py-3 px-14 rounded-full shadow-md transition-colors duration-200 select-none">
+      Homepage
+    </a>
+
+  </main>
+
+  <!-- Footer -->
+    <footer class="bg-gray-900 mt-20 border-t border-rose-500 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Connect with Me</h4>
+                <div class="flex space-x-6 text-xl">
+                    <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank"
+                        aria-label="LinkedIn" class="hover:text-purple-400 transition-colors duration-200">
+                        &#128100; LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank" aria-label="Instagram"
+                        class="hover:text-purple-400 transition-colors duration-200">
+                        &#128247; Instagram
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Get in Touch</h4>
+                <p class="text-gray-300 mb-2">Questions or comments?</p>
+                <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank"
+                    class="inline-block bg-rose-500 hover:bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg transition duration-300">
+                    Email Me
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-gray-400 text-center md:text-right mt-6 md:mt-0">
+                <p>© 2025 Razan Al Ayoubi</p>
+                <p class="text-sm mt-1">All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>

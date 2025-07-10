@@ -1,53 +1,132 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>University Classes</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./Images/schedule.png" type="image/x-icon">
+    <link rel="icon" href="./Images/schedule.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <main class="main_body">
-    
-        <h1 class="headerPages">University Classes</h1>
-    
-    <p>I'm an undergraduate student at the <b><i>University of Science and Arts in Lebanon (USAL)</i></b></p>
-    <p>For Fall 24/25, I'm registered in 5 courses which are:</p>
-    <ol>
-        <li>Introduction to Programming (Java Fundamentals)</li>
-        <li>Computer Science Overview</li>
-        <li>Linear Algebra</li>
-        <li>Arabic</li>
-        <li>English</li>
+<body class="bg-gray-900 text-white font-sans">
+    <main class="max-w-4xl mx-auto px-6 py-12">
+        <section class="border border-rose-500 rounded-xl p-6 mb-10">
+            <h1 class="text-3xl font-bold text-rose-400 mb-6">University Classes</h1>
+            <p class="mb-4">I'm an undergraduate student at the <b><i>University of Science and Arts in Lebanon
+                        (USAL)</i></b>.</p>
 
-    </ol>
-    <p>My favorite course for now is <b><i>Introduction to Programming!</i></b></p>
-    <img src="./Images/java.png" alt="java" height="200" width="300" />
-    <img src="./Images/binary.png" alt="binary" height="200" width="300" />
-    <br>
-    <h3>Here are some resources if you are interested in learning Java:</h3>
-    <a class= "resourceLink" href="https://medium.com/@AlexanderObregon/my-top-5-resources-for-learning-java-in-2023-bf08e77d8536" target="_blank">Start
-        learning Java!</a>
-    <br><br>
-    <a href='Homepage.html'><button>Homepage</button></a>
-    <a href='Schedule.html'><button>Schedule</button></a>
-    <br><br>
+            <h2 class="text-2xl text-emerald-400 font-semibold mb-2">Currently Registered Courses (Summer 24/25)</h2>
+            <ol class="list-decimal list-inside space-y-1 mb-6">
+                <li>English Communication Skills II</li>
+                <li>Computer Networks I</li>
+            </ol>
+        </section>
+
+        <section class="border border-rose-500 rounded-xl p-6">
+            <h2 class="text-2xl text-yellow-400 font-semibold mb-2">Previously Taken Courses</h2>
+
+            <h3 class="text-xl text-purple-300 font-semibold mt-4 mb-1">Fall 24/25</h3>
+            <table class="w-full mb-6 border border-gray-700">
+                <tbody>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-1 px-2">Introduction to Programming (Java Fundamentals)</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-1 px-2">Computer Science Overview</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-1 px-2">Linear Algebra</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-1 px-2">Arabic</td>
+                    </tr>
+                    <tr>
+                        <td class="py-1 px-2">English</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 class="text-xl text-purple-300 font-semibold mb-1">Spring 24/25</h3>
+            <table class="w-full border border-gray-700">
+                <tbody>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-1 px-2">English Communication Skills I</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-1 px-2">Object-Oriented Programming (Java)</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-1 px-2">Calculus</td>
+                    </tr>
+                    <tr class="border-b border-gray-700">
+                        <td class="py-1 px-2">Discrete Math</td>
+                    </tr>
+                    <tr>
+                        <td class="py-1 px-2">Computer Architecture</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <p class="mt-6 mb-4">My favorite courses for now are <b><i>Object-Oriented Programming</i></b> and
+            <b><i>Calculus</i></b>!</p>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-6">
+            <img src="./Images/java.png" alt="java" class="rounded shadow-md w-full h-52 object-cover" />
+            <img src="./Images/binary.png" alt="binary" class="rounded shadow-md w-full h-52 object-cover" />
+        </div>
+
+        <h3 class="text-xl font-semibold text-green-400 mb-2">Resources</h3>
+        <a href="https://medium.com/@AlexanderObregon/my-top-5-resources-for-learning-java-in-2023-bf08e77d8536"
+            target="_blank" class="text-blue-400 underline hover:text-blue-300">Start learning Java!</a>
+
+        <nav class="flex justify-center gap-6 mt-12 mb-20">
+            <a href="index.html" class="border-2 border-rose-500 text-rose-500 font-semibold text-lg px-6 py-2 rounded-lg
+            hover:bg-rose-500 hover:text-white transition">
+                Homepage
+            </a>
+            <a href="Schedule.html" class="border-2 border-rose-500 text-rose-500 font-semibold text-lg px-6 py-2 rounded-lg
+            hover:bg-rose-500 hover:text-white transition">
+                Schedule
+            </a>
+        </nav>
     </main>
-    <footer>
 
-        <p><b><i>My Socials:</i></b></p>
+   <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-rose-500 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Connect with Me</h4>
+                <div class="flex space-x-6 text-xl">
+                    <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank"
+                        aria-label="LinkedIn" class="hover:text-purple-400 transition-colors duration-200">
+                        &#128100; LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank" aria-label="Instagram"
+                        class="hover:text-purple-400 transition-colors duration-200">
+                        &#128247; Instagram
+                    </a>
+                </div>
+            </div>
 
-        <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank">&#x1F465; LinkedIn</a>
-        <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank">&#x1F4F7;Instagram</a>
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Get in Touch</h4>
+                <p class="text-gray-300 mb-2">Questions or comments?</p>
+                <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank"
+                    class="inline-block bg-rose-500 hover:bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg transition duration-300">
+                    Email Me
+                </a>
+            </div>
 
-        <p><i><b>Any questions?</b></i></p>
-        <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank">Email me</a>
-
-
+            <!-- Copyright -->
+            <div class="text-gray-400 text-center md:text-right mt-6 md:mt-0">
+                <p>© 2025 Razan Al Ayoubi</p>
+                <p class="text-sm mt-1">All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 

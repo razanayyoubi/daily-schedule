@@ -1,79 +1,68 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <title>Special Events</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./Images/schedule.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Special Events</title>
+  <link rel="icon" href="./Images/schedule.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="centering_events">
-    <main class="main_body">
-    
-    <h1>Special Events in <i><span style="color: #CC0000;">December!</i></h1>
-    <p class="pEvents">Since our daily tasks and events vary, this page is dedicated to show all the special events taking place in this
-        month.</p>
-    
-    <!-- 1st event -->
-    <table class="Events_Table">
-        <tr>
+<body class="bg-gray-950 text-white font-sans min-h-screen flex flex-col">
 
-            <td>
-                <h2>My 18th Birthday - December 14th</h2>
-                <p>My 18th birthday is coming up in the next few days, marking a special milestone in my life.</p>
-            </td>
-            <td><img class="me" src="./Images/grad pic.jpg" alt="Me"/></td>
-        </tr>
+  <main class="flex-grow px-6 py-12 max-w-4xl mx-auto">
 
+    <h1 class="text-4xl font-bold text-rose-500 mb-8 text-center">Special Events</h1>
 
-        <!--2nd event -->
-        <tr>
-            <td>
-                <h2>Christmas - December 25th</h2>
-                <p>
-                    A Christian holiday celebrated to honor the birth of Jesus Christ.
-                    It is widely observed with traditions such as gift-giving, decorating Christmas trees,
-                    attending church services, and sharing meals with family and friends.
-                </p>
-            </td>
-            <td><img class="christmas" src="./Images/christmas.png" alt="Christmas"/></td>
+    <section class="bg-gray-900 rounded-2xl p-8 border border-rose-500 shadow-lg text-center">
+      <h2 class="text-3xl font-semibold text-rose-400 mb-4">No Special Events in July</h2>
+      <p class="text-gray-300 text-lg mb-6">
+        There are no special events scheduled for this month. Please check back next month for updates and upcoming activities!
+      </p>
+      <a href="index.html" class="inline-block bg-rose-500 hover:bg-rose-600 text-white font-semibold py-2 px-6 rounded-full transition-colors duration-300">
+        Back to Homepage
+      </a>
+    </section>
 
-        </tr>
+  </main>
 
+  <!-- Footer -->
+    <footer class="bg-gray-900 mt-20 border-t border-rose-500 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Connect with Me</h4>
+                <div class="flex space-x-6 text-xl">
+                    <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank"
+                        aria-label="LinkedIn" class="hover:text-purple-400 transition-colors duration-200">
+                        &#128100; LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank" aria-label="Instagram"
+                        class="hover:text-purple-400 transition-colors duration-200">
+                        &#128247; Instagram
+                    </a>
+                </div>
+            </div>
 
-        <!-- 3rd event -->
-        <tr>
-            <td>
-                <h2>New Year's Eve - December 31st</h2>
-                <p>New Year's Eve is the celebration on December 31st, marking the end of the current year
-                    and the beginning of the new year, often accompanied by parties, fireworks,
-                    and countdowns to midnight.</p>
-            </td>
-            <td><img class="newYear" src="./Images/newyear.png" alt="New year"/></td>
-        </tr>
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Get in Touch</h4>
+                <p class="text-gray-300 mb-2">Questions or comments?</p>
+                <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank"
+                    class="inline-block bg-rose-500 hover:bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg transition duration-300">
+                    Email Me
+                </a>
+            </div>
 
-    </table>
-    <br>
-
-    <a href='Homepage.html'><button>Homepage</button></a>
-    <a href='Schedule.html'><button>Schedule</button></a>
-</main>
-    <footer>
-        
-            <p><b><i>My Socials:</i></b></p>
-
-            <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank">&#x1F465; LinkedIn</a>
-            <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank">&#x1F4F7;Instagram</a>
-
-            <p><i><b>Any questions?</b></i></p>
-            <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank">Email me</a>
-
-        
-        </footer>
+            <!-- Copyright -->
+            <div class="text-gray-400 text-center md:text-right mt-6 md:mt-0">
+                <p>© 2025 Razan Al Ayoubi</p>
+                <p class="text-sm mt-1">All rights reserved.</p>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>

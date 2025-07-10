@@ -1,54 +1,87 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <title>Assignments</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./Images/schedule.png" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Time</title>
+  <link rel="icon" href="./Images/schedule.png" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <main class="main_body">
-    
-        <h1 class="headerPages">Study Time!</h1>
-    
-    <h2>Keep Going!</h2>
-    <p>"Success is the sum of small efforts, repeated day in and day out."</p>
-    <p>Stay consistent and focused to achieve your goals!</p>
+<body class="bg-gray-900 text-white font-sans">
+  <main class="max-w-4xl mx-auto px-6 py-12">
+    <section class="border border-rose-500 rounded-xl p-6">
+      <h1 class="text-3xl font-bold text-rose-400 mb-4">Study Time!</h1>
 
-    <section>
-        <h2>Assignment Tips</h2>
-        <ul>
-            <li>Start with the most urgent tasks.</li>
-            <li>Break large tasks into smaller steps.</li>
-            <li>Take short breaks to stay focused.</li>
-            <li>Use a timer to work in focused intervals (e.g., 25 minutes).</li>
-            <li>Review your progress at the end of the day.</li>
+      <h2 class="text-2xl font-semibold text-amber-300 mb-2">Keep Going!</h2>
+      <p class="italic text-gray-300 mb-2">"Success is the sum of small efforts, repeated day in and day out."</p>
+      <p class="mb-6">Stay consistent and focused to achieve your goals!</p>
+
+      <div class="mb-6">
+        <h2 class="text-xl font-semibold text-purple-300 mb-2">Assignment Tips</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>Start with the most urgent tasks.</li>
+          <li>Break large tasks into smaller steps.</li>
+          <li>Take short breaks to stay focused.</li>
+          <li>Use a timer to work in focused intervals (e.g., 25 minutes).</li>
+          <li>Review your progress at the end of the day.</li>
         </ul>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+        <img src="./Images/assignments.png" alt="Assignments" class="rounded shadow-md w-full h-52 object-cover" />
+        <img src="./Images/study.png" alt="Study" class="rounded shadow-md w-full h-52 object-cover" />
+      </div>
+
+      <nav class="flex justify-center gap-6 mt-12 mb-5">
+        <a href="index.html" class="border-2 border-rose-500 text-rose-500 font-semibold text-lg px-6 py-2 rounded-lg
+            hover:bg-rose-500 hover:text-white transition">
+            Homepage
+        </a>
+        <a href="Schedule.html" class="border-2 border-rose-500 text-rose-500 font-semibold text-lg px-6 py-2 rounded-lg
+            hover:bg-rose-500 hover:text-white transition">
+            Schedule
+        </a>
+    </nav>
     </section>
-    <img src="./Images/assignments.png" alt="Assignments" height="200" width="325" />
-    <img src="./Images/study.png" alt="Assignments" height="200" width="350" />
-    <br><br>
-    <a href='./Homepage.html'><button>Homepage</button></a>
-    <a href='./Schedule.html'><button>Schedule</button></a>
-    <br>
-    </main>
-    <footer>
+  </main>
 
-        <p><b><i>My Socials:</i></b></p>
+  <!-- Footer -->
+    <footer class="bg-gray-900 mt-5 border-t border-rose-500 text-white">
+        <div class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Social Media -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Connect with Me</h4>
+                <div class="flex space-x-6 text-xl">
+                    <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank"
+                        aria-label="LinkedIn" class="hover:text-purple-400 transition-colors duration-200">
+                        &#128100; LinkedIn
+                    </a>
+                    <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank" aria-label="Instagram"
+                        class="hover:text-purple-400 transition-colors duration-200">
+                        &#128247; Instagram
+                    </a>
+                </div>
+            </div>
 
-        <a href="https://www.linkedin.com/in/razan-al-ayoubi-5372552aa/" target="_blank">&#x1F465; LinkedIn</a>
-        <a href="https://www.instagram.com/razan_ayyoubi/" target="_blank">&#x1F4F7;Instagram</a>
+            <!-- Contact Info -->
+            <div>
+                <h4 class="text-rose-400 font-bold mb-3 uppercase tracking-wide">Get in Touch</h4>
+                <p class="text-gray-300 mb-2">Questions or comments?</p>
+                <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank"
+                    class="inline-block bg-rose-500 hover:bg-rose-600 text-white font-semibold px-5 py-2 rounded-lg transition duration-300">
+                    Email Me
+                </a>
+            </div>
 
-        <p><i><b>Any questions?</b></i></p>
-        <a href="mailto:razanayoubi14@gmail.com?subject=Schedule Inquiry" target="_blank">Email me</a>
-
-
+            <!-- Copyright -->
+            <div class="text-gray-400 text-center md:text-right mt-6 md:mt-0">
+                <p>© 2025 Razan Al Ayoubi</p>
+                <p class="text-sm mt-1">All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-
 </body>
 
 </html>
